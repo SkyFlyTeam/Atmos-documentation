@@ -6,6 +6,7 @@
     <a href="#sobre"> Sobre o projeto</a> &nbsp |&nbsp &nbsp
     <a href="#entregas"> Entregas </a> &nbsp |&nbsp &nbsp
     <a href="#tecnologias"> Tecnologias utilizadas </a> &nbsp |&nbsp &nbsp  
+    <a href="#estrutura"> Estutura do projeto </a> &nbsp |&nbsp &nbsp  
     <a href="#backlog"> Backlog do produto </a> &nbsp |&nbsp &nbsp
     <a href="#autores"> Equipe </a> &nbsp |&nbsp &nbsp
     <a href="#links"> Links Úteis </a> 
@@ -15,9 +16,35 @@
 
 # 📑 Sobre o projeto
 
-O Atmos é um aplicação web moderna e responsiva com a capacidade de monitorar o clima e condições do solo a partir de estações meteorológicas distribuídas pela cidade de São José dos Campos. Tal funcionalidade permite com que a aplicação envie alertas em casos de condições de risco.
+Nos tempos atuais, acidentes relacionados a condições meteorológicas (como deslizamentos de terra, inundações etc.) têm se tornado cada vez mais frequentes. Como consequência, áreas mais carentes da região de São José dos Campos sofrem de forma mais intensa com essas situações e, o mais grave: não possuem nenhum tipo de aviso ou alerta em casos de incidentes dessa magnitude.
 
-<br> 
+Diante desse cenário, em parceria com a empresa Tecsus, desenvolvemos o Atmos, uma aplicação web moderna e responsiva, capaz de monitorar o clima e as condições do solo por meio de estações meteorológicas distribuídas pela cidade de São José dos Campos. Essa funcionalidade permite que a aplicação envie alertas em situações de risco, contribuindo para a prevenção de acidentes e a proteção da população.
+
+<br>
+
+<span id="backlog">
+
+# 🎯 Backlog do Produto
+
+| RFN | Rank | Prioridade | User story | Estimativa | Sprint | Critérios de aceitação |
+|-----|------|------------|------------|------------|--------|-------------------------|
+| 04 | 01 | Alta | Eu como ADMINISTRADOR e USUÁRIO COMUM desejo visualizar as estações conectadas | 08 | 1 | - TODOS OS USUÁRIOS devem visualizar as estações conectadas; <br> - Todas as estações devem exibir o nome e imagem referente; <br> - Paginação contendo 15 itens cada; Barra de pesquisa por nome; |
+| 04 | 02 | Alta | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo visualizar os parâmetros dentro de uma estação. | 03 | 1 | - TODOS OS USUÁRIOS devem visualizar os parâmetros das estações e suas devidas unidades se cadastradas; <br> - Parâmetros sem unidade de medida definida devem ser sinalizados por meio um elemento gráfico; |
+| 04 | 03 | Alta | Eu como ADMINISTRADOR desejo cadastrar e alterar parâmetros de uma estação. | 05 | 1 | - O ADMINISTRADOR deve conseguir alterar as unidades de medida dos parâmetros de uma estação em específico; <br> - Os parâmetros não alterados devem permanecer com seus respectivos valores após alteração de outros; <br> - Deve ser gravada a data da alteração de tal parâmetro; |
+| 04 | 04 | Alta | Eu como ADMINISTRADOR desejo alterar o nome e imagem da estação conectada. | 02 | 1 | - O ADMINISTRADOR deve conseguir alterar o nome e imagem de uma estação; <br> - O nome ou imagem não alterado deve permanecer o mesmo após alteração do outro; <br> - Nome é um campo obrigatório; |
+| 07 | 05 | Alta | Eu como ADMINISTRADOR desejo efetuar login para acessar funcionalidades exclusivas do meu papel. | 08 | 1 | - O ADMINISTRADOR deve conseguir efetuar login devidamente na aplicação; |
+| 07 | 06 | Baixa | Eu como SUPER ADMINISTRADOR desejo cadastrar outros usuários administradores para facilitar a administração da aplicação. | 03 | 1 | - O SUPER ADMINISTRADOR deve conseguir cadastrar devidamente um novo administrador; | 
+| 07 | 07 | Baixa | Eu como ADMINISTRADOR desejo alterar minhas próprias informações de cadastro para a manutenção do perfil. | 02 | 1 | - O ADMINISTRADOR deve conseguir alterar suas informações com sucesso; |
+| 05 | 08 | Baixa |Eu como ADMINISTRADOR desejo cadastrar tipos de alertas para visualizar que tipo de alertas os usuários poderão receber. | 03 | 1 | - O ADMINISTRADOR deve conseguir cadastrar/editar tipos com sucesso; <br> - TODOS OS USUÁRIOS devem poder visualizar os tipos de alertas cadastrados | 
+| 02 | 09 | Alta | Eu como ADMINISTRADOR desejo receber dados simulados para alimentar a aplicação. | 13 | 2 | A aplicação deve receber dados (mockados por hora) dos sensores devidamente; <br> - A aplicação deve armazenar os dados da aplicação devidamente; <br> - A aplicação deve garantir a recepção dos dados mesmo sob requisições grandes; |
+| 02 | 10 | Alta | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo que os dados recebidos sejam interpretados para dados palpáveis. | 05 | 2 | - A aplicação deve interpretar os dados recebidos conforme os parâmetros configurados por estação. | 
+| 03 | 11 | Média | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo visualizar uma dashboard com gráficos informativos sobre a variação dos parâmetros das estações. | 08 | 2 | As dashboards devem possuir filtros por período e estação; <br> - O usuário deve ter a capacidade de definir a unidade de medida padrão da dashboard; <br> - As dashboards devem apresentar conceitos estatísticos; | 
+| 01 | 13 | Alta | Eu como ADMINISTRADOR desejo conectar estações à aplicação para poder exibir e manipular seus parâmetros. | 05 | 3 | - A estação deve ter a capacidade de se conectar a aplicação por wifi; <br> - A instalação da estação deve ser simples e rápida; |
+| 02 | 14 | Alta | Eu como ADMINISTRADOR desejo receber parâmetros das estações para administrar e visualizar tais dados. | 08 | 3 | - A estação deve coletar os parâmetros à partir dos sensores e enviá-los para o broker (datalogger); <br> - A estação deve garantir que, mesmo que um data não tenha sida coletado devidamente, os outros sejam enviados sem problemas; |
+| 05 | 15 | Média | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo receber alertas sobre condições meteorológicas extremas. | 08 | 3 | - O ADMINISTRADOR E USUÁRIO COMUM devem receber alertas sob condições meteorológicas extremas; <br> - O alerta deve ser exibido tanto em notificação do website bem como fora dele (Notificações do navegador); |
+| 06 | 16 | Baixa | Eu como USUÁRIO COMUM desejo visualizar guias explicativos sobre os parâmetros e sua coleta para compreender os conceitos físicos por trás dos mesmos. | 05 | 3 | Os guias devem ser ilustrados atrativos para o público infanto-juvenil; <br> - Todos os parâmetros devem apresentar os guias com informações sobre, a coleta, a unidade de medida, a física e no que isso afeta o ambiente (no caso de situação excessiva ou escassa); <br> - Além disso guias sobre a estação; |
+
+<br>
 
 <span id="entregas">
 
@@ -54,15 +81,11 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 
 <br>
 
-<span id="backlog">
+<span id="estrutura">
 
-# 🎯 Backlog do Produto
+# Estrutura do Projeto
 
-![Backlog do Produto](./mgt/Backlog%20do%20Produto.png)
-
-![Backlog Sprint](./mgt/backlog_das_sprint.png)
-
-<br>
+![Estrutura](./mgt/Arquitetura%20do%20projeto.png)
 
 
 ## DoR (Definition of Ready) 
@@ -93,10 +116,9 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 
 # 🔗 Links úteis
 - [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/12QT37gpqIwlUWXJmurE72GGgu8Mt4sjX/view?usp=sharing)
-- [Fluxo de trabalho no Github](https://drive.google.com/file/d/18F6FAJzD4ICA4dIlYwwmbBYVurj4LQJG/view?usp=sharing)
 - [Product backlog detalhado](https://docs.google.com/document/d/1vjvclXg3ROMe8RTefvWXqM33MQ0H1MwmVwH9GwyZX0k/edit?usp=sharing)
 - [Wireframe da aplicação](https://www.figma.com/design/I2ve5ty4HGnBXGKYEpamqh/Atmos?node-id=0-1&p=f&t=etRZoSKjtiXJjEUf-0)
-- [Arquitetura do projeto](https://drive.google.com/file/d/1Z2IJqIyfRZJQH9JDZv8rzPUhAL7kakLX/view?usp=sharing)
+- [Arquitetura do projeto](https://drive.google.com/file/d/1Z24zyW6E9l9ZoS8rbZVUWsgV5O73bVz_/view?usp=sharing)
 <br>
 
 
@@ -107,10 +129,10 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 
 |    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  Product Owner  | Sarah Montuani Batagioti               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sarahbatagioti/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/SarahBatagioti)   |
-| Scrum Master  | André Salerno |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andresalerno/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/andresalerno)     |
+|  Scrum Master  | Sarah Montuani Batagioti               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sarahbatagioti/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/SarahBatagioti)   |
+| Team Member   | André Salerno |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andresalerno/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/andresalerno)     |
 |  Team Member  | Brenno Rosa Lyrio de Oliveira               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/brennolyrio/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/BrennoLyrio)   |
-| Team Member   | Eric Lourenço Mendes da Silva      |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)]() [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ericloumendes)        |
+| Product Owner   | Eric Lourenço Mendes da Silva      |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)]() [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ericloumendes)        |
 |  Team Member  | Gustavo Muraoka Silva                 |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-muraoka-4256721ba/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gustavomuraoka)        |
 |  Team Member  | Karen de Cássia Gonçalves     |           [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/karen-cgonçalves) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/karengoncalves8)   |
 |  Team Member  | Guilherme dos Santos Benedito               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-benedito/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gui-benedito)   |
