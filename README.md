@@ -115,8 +115,7 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 <span id="links">
 
 # 🔗 Links úteis
-- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/10pL9d4pQthSKwqoWjnbRhdVWXD9MhvXn/view?usp=sharing)
-- [Estratégia de branch do github](https://drive.google.com/file/d/18F6FAJzD4ICA4dIlYwwmbBYVurj4LQJG/view?usp=sharing)
+- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/12QT37gpqIwlUWXJmurE72GGgu8Mt4sjX/view?usp=sharing)
 - [Product backlog detalhado](https://docs.google.com/document/d/1vjvclXg3ROMe8RTefvWXqM33MQ0H1MwmVwH9GwyZX0k/edit?usp=sharing)
 - [Wireframe da aplicação](https://www.figma.com/design/I2ve5ty4HGnBXGKYEpamqh/Atmos?node-id=0-1&p=f&t=etRZoSKjtiXJjEUf-0)
 - [Arquitetura do projeto](https://drive.google.com/file/d/1Z24zyW6E9l9ZoS8rbZVUWsgV5O73bVz_/view?usp=sharing)
