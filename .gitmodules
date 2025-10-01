@@ -1,0 +1,9 @@
+[submodule "Frontend"]
+	path = Frontend
+	url = https://github.com/SkyFlyTeam/Atmos-frontend.git
+[submodule "Backend"]
+	path = Backend
+	url = https://github.com/SkyFlyTeam/Atmos-backend.git
+[submodule "Processador-de-dados"]
+	path = Processador-de-dados
+	url = https://github.com/SkyFlyTeam/Atmos-processador-dados.git
