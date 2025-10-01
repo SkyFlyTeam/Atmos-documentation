@@ -22,6 +22,26 @@ Diante desse cenário, em parceria com a empresa Tecsus, desenvolvemos o Atmos, 
 
 <br>
 
+# Requisitos funcionais
+
+- **RFN01. Conectar novas estações meteorológicas:** A aplicação deve ter a capacidade de conectar-se a novas estações meteorológicas (físicas) de maneira simples e rápida;
+
+- **RFN02. Coleta de dados meteorológicos:** A aplicação deve ter a capacidade de coletar e armazenar os dados enviados pelas estações meteorológicas, a partir de diferentes sensores (dinâmico), de forma segura e persistente bem como interpretar tais dados;
+
+- **RFN03. Dashboards:** A aplicação deve conter uma dashboard que apresenta de forma gráfica os parâmetros das estações, individualmente e de forma geral;
+
+- **RFN04. Configuração de parâmetros de estações:** A aplicação deve ter a capacidade de configurar individualmente a unidade de medida dos parâmetros recebidos além dos nomes de suas respectivas estações;
+
+- **RFN05. Alertas meteorológicos:** A aplicação deve enviar alertas e notificações baseadas em condições meteorológicas específicas;
+
+- **RFN06. Guias interativos:** A aplicação deve conter guias interativos sobre os parâmetros e possíveis riscos;
+
+- **RFN07. Cadastro e gestão de administradores:** A aplicação deve ter a capacidade de cadastrar e gerenciar usuários administradores;
+
+- **RFN08. Geração de relatórios:** Desenvolvimento de pelo menos três relatórios distintos que
+proporcionem insights sobre os dados coletados.
+
+
 <span id="backlog">
 
 # 🎯 Backlog do Produto
