@@ -53,7 +53,7 @@ Diante desse cenário, em parceria com a empresa Tecsus, desenvolvemos o Atmos, 
 Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório, além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido naquela sprint.
 | Sprint | Previsão de entrega | Status | Histórico |
 |:--:|:----------:|:-------------------|:-------------------------------------------------:|
-| 01 | 08/09/2025 a 28/09/2025 | Em andamento | [Ver relatório]() |
+| 01 | 08/09/2025 a 28/09/2025 | Em andamento | [Ver relatório](https://github.com/SkyFlyTeam/Atmos-documentation/tree/sprint1) |
 | 02 | 06/10/2025 a 26/10/2025 | Em breve | [Ver relatório]() |
 | 03 | 03/11/2025 a 23/11/2025 | Em breve |  [Ver relatório]()|
 
