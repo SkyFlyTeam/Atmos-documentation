@@ -1,33 +1,67 @@
-![Banner BeeOnTime](./mgt/BannerSmartFarm.png)
+![1° Sprint](./mgt/BannerSmartFarm.png)
 
 <br>
 
 <p align="center">
-    <a href="#sobre"> Sobre o projeto</a> &nbsp |&nbsp &nbsp
+    <a href="#objetivos"> Objetivos da Sprint </a> &nbsp |&nbsp &nbsp
     <a href="#entregas"> Entregas </a> &nbsp |&nbsp &nbsp
-    <a href="#tecnologias"> Tecnologias utilizadas </a> &nbsp |&nbsp &nbsp  
-    <a href="#estrutura"> Estutura do projeto </a> &nbsp |&nbsp &nbsp  
-    <a href="#backlog"> Backlog do produto </a> &nbsp |&nbsp &nbsp
-    <a href="#autores"> Equipe </a> &nbsp |&nbsp &nbsp
-    <a href="#links"> Links Úteis </a> 
+    <a href="#metricas"> Métricas do Time </a>  &nbsp |&nbsp &nbsp  
+    <a href="#backlog"> Backlog da Sprint </a>  &nbsp |&nbsp &nbsp  
+    <a href="#links"> Links úteis </a>
 </p>
 
-<span id="sobre">
+No início do desenvolvimento da aplicação de controle de ponto eletrônico, a primeira sprint focou no MVP (Produto Mínimo Viável), priorizando as funcionalidades mais essenciais. A equipe concentrou seus esforços no CRUD básico do sistema. Entre as funcionalidades desenvolvidas, destacam-se o cadastro de estações, parâmetros, alertas e usuários, bem como o sistema de login da plataforma.
 
-# 📑 Sobre o projeto
+<span id="objetivos">
 
-Nos tempos atuais, acidentes relacionados a condições meteorológicas (como deslizamentos de terra, inundações etc.) têm se tornado cada vez mais frequentes. Como consequência, áreas mais carentes da região de São José dos Campos sofrem de forma mais intensa com essas situações e, o mais grave: não possuem nenhum tipo de aviso ou alerta em casos de incidentes dessa magnitude.
+# 🎯 Objetivos da Sprint
+Os requisitos funcionais atendidos nesta sprint foram:
 
-Diante desse cenário, em parceria com a empresa Tecsus, desenvolvemos o Atmos, uma aplicação web moderna e responsiva, capaz de monitorar o clima e as condições do solo por meio de estações meteorológicas distribuídas pela cidade de São José dos Campos. Essa funcionalidade permite que a aplicação envie alertas em situações de risco, contribuindo para a prevenção de acidentes e a proteção da população.
+- ✔️ **RFN04. Configuração de parâmetros de estações:** <br> A aplicação deve ter a capacidade de configurar individualmente a unidade de medida dos parâmetros recebidos além dos nomes de suas respectivas estações; <br> <br>
+- ✔️ **RFN05. Alertas meteorológicos:** <br> A aplicação deve enviar alertas e notificações baseadas em condições meteorológicas específicas; <br> <br>
+- ✔️ **RFN07. Cadastro e gestão de administradores:** <br> A aplicação deve ter a capacidade de cadastrar e gerenciar usuários administradores; <br> <br>
+
+<br> 
+
+<span id="entregas">
+
+# 📲 Entregas
+Durante esta sprint, o time entregou artefatos SCRUM validados, como o Backlog do Produto, o Backlog das Sprints e as User Stories, com a participação direta do P.O. e comunicação constante com o cliente. Para entender e alinhar as expectativas do cliente, foi criado um protótipo inicial no Figma, que ajudou a definir a identidade visual e o design do sistema. Esse protótipo foi validado com o cliente e traduzido em uma aplicação React, integrando as funcionalidades acordadas para esta sprint.
+
+### RF 04: Configuração de parâmetros de estações
+O usuário tem a capacidade de cadastrar parâmetros e atrelá-los às estações, definindo quais estações carregam quais tipos de parâmetros, além de, claro, possuir a capacidade de cadastrar e administrar as estações do sistema;
+
+### RF 05: Alertas meteorológicos
+O usuário tem a capacidade de cadastrar e administrar tipos de alertas meteorológicos na aplicação dessa forma dando a capacidade do usuário de 
+preparar alertas específicos após cada recepção; 
+
+### RF 03: Cadastro e gestão de administradores
+O usuário tem a capacidade de cadastrar e gerir administradores da aplicação. Apenas esses são capazes de realizar os cadastros préviamente citados.
+
+
+<br />
+
+<span id="metricas">
+
+# 📈 Métricas do Time
+A sprint foi composta por 8 user stories e 27 tasks. Embora o gráfico de burndown mostre que o trabalho foi concentrado no final, a realidade é que o time começou a trabalhar antes da sprint, realizando atividades como a criação do mockup, definição de DoR e DoD, elaboração do Backlog da Sprint, e configuração das branches de backend e frontend.
+
+O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A linha horizontal representa o tempo, ou seja, as datas da sprint, enquanto a linha vertical indica os pontos de história que representam o esforço total planejado para a sprint. A linha cinza mostra a taxa de progresso ideal, indicando como o trabalho deveria ser realizado de maneira constante ao longo dos dias. Já a linha vermelha indica o trabalho realizado, que no gráfico reflete a conclusão das User Stories 100% finalizadas. O pico no gráfico ocorre quando as User Stories são concluídas, explicando a aparente concentração de trabalho no final da sprint. Na prática, a maior parte das subtasks já estava concluída antes das últimas entregas.
+
+<br />
+    
+<div align="center">
+<img src="./mgt/burndown.png" alt="Gráfico Burndown" />
+</div>
 
 <br>
 
 <span id="backlog">
 
-# 🎯 Backlog do Produto
+# 📃 Backlog da Sprint
 
-| RFN | Rank | Prioridade | User story | Estimativa | Sprint | Critérios de aceitação |
-|-----|------|------------|------------|------------|--------|-------------------------|
+| **RFN** | **Rank** | **Prioridade** | **User Story** | **Estimativa** | **Sprint** | **Critérios de Aceitação** |
+|---------|----------|----------------|----------------|----------------|------------|---------------------------|
 | 04 | 01 | Alta | Eu como ADMINISTRADOR e USUÁRIO COMUM desejo visualizar as estações conectadas | 08 | 1 | - TODOS OS USUÁRIOS devem visualizar as estações conectadas; <br> - Todas as estações devem exibir o nome e imagem referente; <br> - Paginação contendo 15 itens cada; Barra de pesquisa por nome; |
 | 04 | 02 | Alta | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo visualizar os parâmetros dentro de uma estação. | 03 | 1 | - TODOS OS USUÁRIOS devem visualizar os parâmetros das estações e suas devidas unidades se cadastradas; <br> - Parâmetros sem unidade de medida definida devem ser sinalizados por meio um elemento gráfico; |
 | 04 | 03 | Alta | Eu como ADMINISTRADOR desejo cadastrar e alterar parâmetros de uma estação. | 05 | 1 | - O ADMINISTRADOR deve conseguir alterar as unidades de medida dos parâmetros de uma estação em específico; <br> - Os parâmetros não alterados devem permanecer com seus respectivos valores após alteração de outros; <br> - Deve ser gravada a data da alteração de tal parâmetro; |
@@ -36,155 +70,15 @@ Diante desse cenário, em parceria com a empresa Tecsus, desenvolvemos o Atmos, 
 | 07 | 06 | Baixa | Eu como SUPER ADMINISTRADOR desejo cadastrar outros usuários administradores para facilitar a administração da aplicação. | 03 | 1 | - O SUPER ADMINISTRADOR deve conseguir cadastrar devidamente um novo administrador; | 
 | 07 | 07 | Baixa | Eu como ADMINISTRADOR desejo alterar minhas próprias informações de cadastro para a manutenção do perfil. | 02 | 1 | - O ADMINISTRADOR deve conseguir alterar suas informações com sucesso; |
 | 05 | 08 | Baixa |Eu como ADMINISTRADOR desejo cadastrar tipos de alertas para visualizar que tipo de alertas os usuários poderão receber. | 03 | 1 | - O ADMINISTRADOR deve conseguir cadastrar/editar tipos com sucesso; <br> - TODOS OS USUÁRIOS devem poder visualizar os tipos de alertas cadastrados | 
-| 02 | 09 | Alta | Eu como ADMINISTRADOR desejo receber dados simulados para alimentar a aplicação. | 13 | 2 | A aplicação deve receber dados (mockados por hora) dos sensores devidamente; <br> - A aplicação deve armazenar os dados da aplicação devidamente; <br> - A aplicação deve garantir a recepção dos dados mesmo sob requisições grandes; |
-| 02 | 10 | Alta | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo que os dados recebidos sejam interpretados para dados palpáveis. | 05 | 2 | - A aplicação deve interpretar os dados recebidos conforme os parâmetros configurados por estação. | 
-| 03 | 11 | Média | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo visualizar uma dashboard com gráficos informativos sobre a variação dos parâmetros das estações. | 08 | 2 | As dashboards devem possuir filtros por período e estação; <br> - O usuário deve ter a capacidade de definir a unidade de medida padrão da dashboard; <br> - As dashboards devem apresentar conceitos estatísticos; | 
-| 01 | 13 | Alta | Eu como ADMINISTRADOR desejo conectar estações à aplicação para poder exibir e manipular seus parâmetros. | 05 | 3 | - A estação deve ter a capacidade de se conectar a aplicação por wifi; <br> - A instalação da estação deve ser simples e rápida; |
-| 02 | 14 | Alta | Eu como ADMINISTRADOR desejo receber parâmetros das estações para administrar e visualizar tais dados. | 08 | 3 | - A estação deve coletar os parâmetros à partir dos sensores e enviá-los para o broker (datalogger); <br> - A estação deve garantir que, mesmo que um data não tenha sida coletado devidamente, os outros sejam enviados sem problemas; |
-| 05 | 15 | Média | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo receber alertas sobre condições meteorológicas extremas. | 08 | 3 | - O ADMINISTRADOR E USUÁRIO COMUM devem receber alertas sob condições meteorológicas extremas; <br> - O alerta deve ser exibido tanto em notificação do website bem como fora dele (Notificações do navegador); |
-| 06 | 16 | Baixa | Eu como USUÁRIO COMUM desejo visualizar guias explicativos sobre os parâmetros e sua coleta para compreender os conceitos físicos por trás dos mesmos. | 05 | 3 | Os guias devem ser ilustrados atrativos para o público infanto-juvenil; <br> - Todos os parâmetros devem apresentar os guias com informações sobre, a coleta, a unidade de medida, a física e no que isso afeta o ambiente (no caso de situação excessiva ou escassa); <br> - Além disso guias sobre a estação; |
 
-<br>
-
-<span id="entregas">
-
-# 🏁 Entregas de Sprints
-
-Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório, além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido naquela sprint.
-| Sprint | Previsão de entrega | Status | Histórico |
-|:--:|:----------:|:-------------------|:-------------------------------------------------:|
-| 01 | 08/09/2025 a 28/09/2025 | Em andamento | [Ver relatório]() |
-| 02 | 06/10/2025 a 26/10/2025 | Em breve | [Ver relatório]() |
-| 03 | 03/11/2025 a 23/11/2025 | Em breve |  [Ver relatório]()|
-
-<br />
-
-<span id="tecnologias">
-
-# 🛠️ Tecnologias Utilizadas
-
-As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na construção do projeto:
-
-![Typescript](https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node%20js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933)
-![Next](https://img.shields.io/badge/Nextjs-20232A?style=for-the-badge&logo=next.js&logoColor=23ED8B00)
-![Express](https://img.shields.io/badge/Expressjs-20232A?style=for-the-badge&logo=express&logoColor=23ED8B00)
-![Arduino](https://img.shields.io/badge/Arduino-20232A?style=for-the-badge&logo=arduino&logoColor=00979D)
-![Docker](https://img.shields.io/badge/docker-20232A?style=for-the-badge&logo=docker&logoColor=87CEEB)
-![MySQL](https://img.shields.io/badge/mysql-20232A?style=for-the-badge&logo=mysql&logoColor=4682B4)
-![MongoDB](https://img.shields.io/badge/MongoDB-20232A?style=for-the-badge&logo=mongodb&logoColor=234ea94b)
-![CSS3](https://img.shields.io/badge/css3-20232A?style=for-the-badge&logo=css3&logoColor=4682B4)
-![Figma](https://img.shields.io/badge/figma-20232A?style=for-the-badge&logo=figma&logoColor=800000)
-![Discord](https://img.shields.io/badge/Discord-20232A?style=for-the-badge&logo=discord&logoColor=61DAFB)
-![Jira](https://img.shields.io/badge/Jira-20232A?style=for-the-badge&logo=Jira&logoColor=4169E1)
-
-<br>
-
-<span id="estrutura">
-
-# Estrutura do Projeto
-
-![Estrutura](./mgt/Arquitetura%20do%20projeto.png)
-
-
-## Como executar o projeto
-
-1 . Clone os repositórios:
-- [Necessita do git instalado](https://git-scm.com/downloads)
-```
-git clone https://github.com/SkyFlyTeam/Atmos-frontend.git
-git clone https://github.com/SkyFlyTeam/Atmos-backend.git
-```
-
-2 . Configurando e executando backend: 
-- [Necessita do node.js 20.17](https://nodejs.org/pt)
-- [Necessita do postgres 18](https://hub.docker.com/_/postgres)
-
-Na pasta do backend:
-- Crie um arquivo chamado ".env" e insira as seguintes informações:
-```
-DB_NAME='Nome da database do banco'
-DB_USER='postgres'
-DB_PASSWORD='Senha do banco de dados'
-DB_HOST='Ip do bando de dados'
-DB_PORT=Porta do banco de dados (5432 por padrão)
-```
-
-Instale as depêncencias do projeto:
-```
-npm install
-```
-
-Inicie o backend:
-```
-npm start
-```
-
-3 . Configurando e executando o frontend
-- [Necessita do node.js 20.17](https://nodejs.org/pt)
-
-Na basta do frontend, execute:
-
-Para instalar as dependências do projeto:
-```
-npm install
-```
-
-Para iniciar o projeto:
-```
-npm run dev
-```
-
-
-## DoR (Definition of Ready) 
-
-- **User Stories completas:** Todos os requisitos descritos em User Stories planejadas para caber na sprint.
-- **Tarefas detalhadas e atribuídas:** Cada User Story deve ter ao menos uma task detalhada e atribuída a um responsável.
-- **Critérios de aceitação definidos:** Cada User Story deve ter critérios de aceitação bem estabelecidos.
-- **Estimativas definidas:** Todas as User Stories devem ter uma estimativa de esforço/tamanho feita pelo time
-- **Wireframe/Mockup aprovados:** O cliente deve ter validado e aprovado os protótipos visuais.
-- **Modelo de dados finalizado:** Estrutura de dados completamente definida e documentada.
-- **Testes de aceitação definidos:** Incluindo testes sugeridos pelo cliente e testes de aceitação.
-- **Ambiente de desenvolvimento pronto:** O time deve ter acesso a todos os ambientes, ferramentas e permissões necessárias.
-
-<br>
-
-## DoD (Definition of Done) 
-
-- **Critérios de aceitação validados:** Todos os critérios de aceitação foram atendidos e verificados com testes apropriados.
-- **Execução de testes adequados:** Testes unitários, de integração e de aceitação foram realizados para garantir a estabilidade e funcionamento correto da aplicação.
-- **Código-fonte completo e padronizado:** O código está 100% implementado, refatorado e segue as boas práticas e padrões de qualidade definidos.
-- **Commits organizados e documentados:** Os commits seguem a nomenclatura acordada, são claros, segmentados e possuem histórico bem documentado.
-- **Guia de instalação detalhado:** A documentação de instalação é clara e completa, permitindo que qualquer usuário ou desenvolvedor configure e execute a aplicação sem dificuldades.
-- **Manual do usuário disponível:** Um manual foi criado para orientar o cliente sobre o funcionamento da aplicação.
-
-<br>
 
 <span id="links">
 
 # 🔗 Links úteis
-- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/12QT37gpqIwlUWXJmurE72GGgu8Mt4sjX/view?usp=sharing)
-- [Product backlog detalhado](https://docs.google.com/document/d/1vjvclXg3ROMe8RTefvWXqM33MQ0H1MwmVwH9GwyZX0k/edit?usp=sharing)
-- [Wireframe da aplicação](https://www.figma.com/design/I2ve5ty4HGnBXGKYEpamqh/Atmos?node-id=0-1&p=f&t=etRZoSKjtiXJjEUf-0)
-- [Arquitetura do projeto](https://drive.google.com/file/d/1Z24zyW6E9l9ZoS8rbZVUWsgV5O73bVz_/view?usp=sharing)
-- [Fluxo de trabalho no git](https://docs.google.com/document/d/1S3pPiDfFxXogIJifizV-DtknxKtDUQphnejfTrRW8t8/edit?usp=sharing)
-- [Estratégia de branch](https://drive.google.com/file/d/18F6FAJzD4ICA4dIlYwwmbBYVurj4LQJG/view?usp=sharing)
+
+- Tags geradas em cada repositório que simbolizam o fim da 1ª sprint:
+  - [Repositório frontend](https://github.com/SkyFlyTeam/Atmos-frontend/releases/tag/v1.0)
+  - [Repositório backend](https://github.com/SkyFlyTeam/Atmos-backend/releases/tag/v1.0)
+  - [Repositório processador-de-dados](https://github.com/SkyFlyTeam/Atmos-processador-dados/releases/tag/v1.0)
 <br>
 
-
-<span id="autores">
-
-# 👥 Equipe
-
-
-|    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
-| :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  Scrum Master  | Sarah Montuani Batagioti               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sarahbatagioti/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/SarahBatagioti)   |
-| Team Member   | André Salerno |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andresalerno/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/andresalerno)     |
-|  Team Member  | Brenno Rosa Lyrio de Oliveira               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/brennolyrio/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/BrennoLyrio)   |
-| Product Owner   | Eric Lourenço Mendes da Silva      |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)]() [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ericloumendes)        |
-|  Team Member  | Gustavo Muraoka Silva                 |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-muraoka-4256721ba/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gustavomuraoka)        |
-|  Team Member  | Karen de Cássia Gonçalves     |           [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/karen-cgonçalves) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/karengoncalves8)   |
-|  Team Member  | Guilherme dos Santos Benedito               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-benedito/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gui-benedito)   |
-|  Team Member  | Arthur Johannes Rodrigues Peres y Peres              |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ajperes/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ajperes)   |
