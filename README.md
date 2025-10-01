@@ -88,6 +88,55 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 ![Estrutura](./mgt/Arquitetura%20do%20projeto.png)
 
 
+## Como executar o projeto
+
+1 . Clone os repositórios:
+- [Necessita do git instalado](https://git-scm.com/downloads)
+```
+git clone https://github.com/SkyFlyTeam/Atmos-frontend.git
+git clone https://github.com/SkyFlyTeam/Atmos-backend.git
+```
+
+2 . Configurando e executando backend: 
+- [Necessita do node.js 20.17](https://nodejs.org/pt)
+- [Necessita do postgres 18](https://hub.docker.com/_/postgres)
+
+Na pasta do backend:
+- Crie um arquivo chamado ".env" e insira as seguintes informações:
+```
+DB_NAME='Nome da database do banco'
+DB_USER='postgres'
+DB_PASSWORD='Senha do banco de dados'
+DB_HOST='Ip do bando de dados'
+DB_PORT=Porta do banco de dados (5432 por padrão)
+```
+
+Instale as depêncencias do projeto:
+```
+npm install
+```
+
+Inicie o backend:
+```
+npm start
+```
+
+3 . Configurando e executando o frontend
+- [Necessita do node.js 20.17](https://nodejs.org/pt)
+
+Na basta do frontend, execute:
+
+Para instalar as dependências do projeto:
+```
+npm install
+```
+
+Para iniciar o projeto:
+```
+npm run dev
+```
+
+
 ## DoR (Definition of Ready) 
 
 - **User Stories completas:** Todos os requisitos descritos em User Stories planejadas para caber na sprint.
@@ -119,6 +168,8 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 - [Product backlog detalhado](https://docs.google.com/document/d/1vjvclXg3ROMe8RTefvWXqM33MQ0H1MwmVwH9GwyZX0k/edit?usp=sharing)
 - [Wireframe da aplicação](https://www.figma.com/design/I2ve5ty4HGnBXGKYEpamqh/Atmos?node-id=0-1&p=f&t=etRZoSKjtiXJjEUf-0)
 - [Arquitetura do projeto](https://drive.google.com/file/d/1Z24zyW6E9l9ZoS8rbZVUWsgV5O73bVz_/view?usp=sharing)
+- [Fluxo de trabalho no git](https://docs.google.com/document/d/1S3pPiDfFxXogIJifizV-DtknxKtDUQphnejfTrRW8t8/edit?usp=sharing)
+- [Estratégia de branch](https://drive.google.com/file/d/18F6FAJzD4ICA4dIlYwwmbBYVurj4LQJG/view?usp=sharing)
 <br>
 
 
