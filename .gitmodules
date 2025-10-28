@@ -7,3 +7,6 @@
 [submodule "Processador-de-dados"]
 	path = Processador-de-dados
 	url = https://github.com/SkyFlyTeam/Atmos-processador-dados.git
+[submodule "Receptor-de-dados"]
+	path = Receptor-de-dados
+	url = https://github.com/SkyFlyTeam/Atmos-receptor-dados.git
