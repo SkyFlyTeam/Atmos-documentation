@@ -101,6 +101,11 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 
 <br>
 
+# Manual de Usuário e Instalação
+
+O manual da aplicação pode ser acessado através do seguinte: https://frill-walkover-a45.notion.site/ATMOS-Manual-do-usu-rio-2a2a1b635ed68083be75ea39f2c097fc?source=copy_link
+
+
 <span id="estrutura">
 
 # Estrutura do Projeto
