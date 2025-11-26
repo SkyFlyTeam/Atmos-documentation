@@ -19,8 +19,12 @@ O principal objetivo nessa sprint a ser comprido era **proporcionar a recepção
 
 Os requisitos funcionais atendidos nesta sprint foram:
 
-- ✔️ **RFN02. Coleta de dados meteorológicos:** <br> A aplicação deve ter a capacidade de coletar e armazenar os dados enviados pelas estações meteorológicas, a partir de diferentes sensores (dinâmico), de forma segura e persistente bem como interpretar tais dados; <br> <br>
-- ✔️ **RFN03. Dashboards:** <br> A aplicação deve conter uma dashboard que apresenta de forma gráfica os parâmetros das estações, individualmente e de forma geral; <br> <br>
+- ✔️ **RFN01. Conectar novas estações meteorológicas:** A aplicação deve ter a capacidade de conectar-se a novas estações meteorológicas (físicas) de maneira simples e rápida; <br> <br>
+- ✔️ **RFN02. Coleta de dados meteorológicos:** A aplicação deve ter a capacidade de coletar e armazenar os dados enviados pelas estações meteorológicas, a partir de diferentes sensores (dinâmico), de forma segura e persistente bem como interpretar tais dados; <br> <br>
+- ✔️ **RFN05. Alertas meteorológicos:** A aplicação deve enviar alertas e notificações baseadas em condições meteorológicas específicas; <br> <br>
+- ✔️ **RFN06. Guias interativos:** A aplicação deve conter guias interativos sobre os parâmetros e possíveis riscos;
+
+ <br> <br>
 
 <br> 
 
@@ -29,11 +33,18 @@ Os requisitos funcionais atendidos nesta sprint foram:
 # 📲 Entregas
 Durante esta sprint, o time entregou artefatos SCRUM validados, como o Backlog do Produto, o Backlog das Sprints e as User Stories, com a participação direta do P.O. e comunicação constante com o cliente. Para entender e alinhar as expectativas do cliente. Dito isso, juntamente ao cliente, acordamos entregar as seguintes funcionalidades:
 
-### RF 02: Coleta de dados meteorológicos:
+### RF 01: Conectar novas estações meteorológicas:
+A aplicação deve ter a capacidade de conectar-se a novas estações meteorológicas (físicas) de maneira simples e rápida;
+
+### RF 02: Coleta de dados meteorológicos::
 A aplicação deve ter a capacidade de coletar e armazenar os dados enviados pelas estações meteorológicas, a partir de diferentes sensores (dinâmico), de forma segura e persistente bem como interpretar tais dados;
 
-### RF 03: Dashboards:
-A aplicação deve conter uma dashboard que apresenta de forma gráfica os parâmetros das estações, individualmente e de forma geral;
+### RF 05: Alertas meteorológicos:
+A aplicação deve enviar alertas e notificações baseadas em condições meteorológicas específicas;
+
+### RF 06: Guias interativos:
+A aplicação deve conter guias interativos sobre os parâmetros e possíveis riscos;
+
 
 <br />
 
@@ -58,9 +69,10 @@ O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A lin
 
 | **RFN** | **Rank** | **Prioridade** | **User Story** | **Estimativa** | **Sprint** | **Critérios de Aceitação** |
 |---------|----------|----------------|----------------|----------------|------------|---------------------------|
-| 02 | 09 | Alta | Eu como ADMINISTRADOR desejo receber dados simulados para alimentar a aplicação. | 13 | 2 | A aplicação deve receber dados (mockados por hora) dos sensores devidamente; <br> - A aplicação deve armazenar os dados da aplicação devidamente; <br> - A aplicação deve garantir a recepção dos dados mesmo sob requisições grandes; |
-| 02 | 10 | Alta | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo que os dados recebidos sejam interpretados para dados palpáveis. | 05 | 2 | - A aplicação deve interpretar os dados recebidos conforme os parâmetros configurados por estação. | 
-| 03 | 11 | Média | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo visualizar uma dashboard com gráficos informativos sobre a variação dos parâmetros das estações. | 08 | 2 | As dashboards devem possuir filtros por período e estação; <br> - O usuário deve ter a capacidade de definir a unidade de medida padrão da dashboard; <br> - As dashboards devem apresentar conceitos estatísticos; | 
+| 01 | 13 | Baixa | Eu como ADMINISTRADOR desejo conectar estações à aplicação para poder exibir e manipular seus parâmetros. | 05 | 3 | - A estação deve ter a capacidade de se conectar a aplicação por wifi; <br> - A instalação da estação deve ser simples e rápida; |
+| 02 | 14 | Baixa | Eu como ADMINISTRADOR desejo receber parâmetros das estações para administrar e visualizar tais dados. | 08 | 3 | - A estação deve coletar os parâmetros à partir dos sensores e enviá-los para o broker (datalogger); <br> - A estação deve garantir que, mesmo que um data não tenha sida coletado devidamente, os outros sejam enviados sem problemas; |
+| 05 | 15 | Baixa | Eu como ADMINISTRADOR E USUÁRIO COMUM desejo receber alertas sobre condições meteorológicas extremas. | 08 | 3 | - O ADMINISTRADOR E USUÁRIO COMUM devem receber alertas sob condições meteorológicas extremas; <br> - O alerta deve ser exibido em notificação do website; |
+| 06 | 16 | Baixa | Eu como USUÁRIO COMUM desejo visualizar guias explicativos sobre os parâmetros e sua coleta para compreender os conceitos físicos por trás dos mesmos. | 05 | 3 | Os guias devem ser ilustrados atrativos para o público infanto-juvenil; <br> - Todos os parâmetros devem apresentar os guias com informações sobre, a coleta, a unidade de medida, a física e no que isso afeta o ambiente (no caso de situação excessiva ou escassa); <br> - Além disso guias sobre a estação; |
 
 
 <span id="links">
@@ -68,9 +80,9 @@ O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A lin
 # 🔗 Links úteis
 
 - Tags geradas em cada repositório que simbolizam o fim da 1ª sprint:
-  - [Repositório frontend](https://github.com/SkyFlyTeam/Atmos-frontend/releases/tag/v2.0)
-  - [Repositório backend](https://github.com/SkyFlyTeam/Atmos-backend/releases/tag/v2.0)
-  - [Repositório processador-de-dados](https://github.com/SkyFlyTeam/Atmos-processador-dados/releases/tag/v2.0)
-  - [Repositório receptor-de-dados](https://github.com/SkyFlyTeam/Atmos-receptor-dados/releases/tag/v2.0)
+  - [Repositório frontend](https://github.com/SkyFlyTeam/Atmos-frontend/releases/tag/v3.0)
+  - [Repositório backend](https://github.com/SkyFlyTeam/Atmos-backend/releases/tag/v3.0)
+  - [Repositório processador-de-dados](https://github.com/SkyFlyTeam/Atmos-processador-dados/releases/tag/v3.0)
+  - [Repositório receptor-de-dados](https://github.com/SkyFlyTeam/Atmos-receptor-dados/releases/tag/v3.0)
 <br>
 
